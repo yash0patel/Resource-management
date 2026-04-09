@@ -1,39 +1,80 @@
+# =========================
 # Python cache / bytecode
+# =========================
 __pycache__/
 *.py[cod]
 *$py.class
 
+# =========================
 # Virtual environments
+# =========================
 .venv/
 venv/
 env/
 ENV/
 
+# =========================
 # Build / packaging
+# =========================
 build/
 dist/
 *.egg-info/
 .eggs/
 pip-wheel-metadata/
 
+# =========================
 # Test / tooling caches
+# =========================
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 htmlcov/
 
+# =========================
 # Jupyter
+# =========================
 .ipynb_checkpoints/
 
+# =========================
 # Streamlit local config
+# =========================
 .streamlit/secrets.toml
 
+# =========================
+# React / Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# React build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Optional: Next.js / Vite / others
+.next/
+.out/
+.vite/
+
+# =========================
 # OS / editor files
+# =========================
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
+# =========================
 # Local datasets, models, and archives
+# =========================
 *.joblib
 *.zip
