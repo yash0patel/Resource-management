@@ -1,0 +1,145 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2.5rem; /* Increased gap */
+  margin-bottom: 4rem;
+}
+
+.content-text p {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem; /* Slightly larger */
+  line-height: 1.7;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tech-group h4 {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.tech-group p {
+  font-size: 1rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Capabilities Section */
+.capabilities-section {
+  margin-bottom: 5rem;
+}
+
+.section-title-alt {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  background: var(--border);
+  padding: 1px; /* Creates the border-between-cards effect */
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.capability-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.capability-card:hover {
+  background: var(--bg-section);
+}
+
+.capability-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.capability-content h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.capability-content p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Metrics Section */
+.metrics-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  background: white;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.04em;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-section {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}
